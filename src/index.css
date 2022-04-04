@@ -1,3 +1,10 @@
+*{
+  --bg-gradient: linear-gradient(180deg, rgba(33,18,95,1) 0%, rgba(18,18,18,1) 100%);
+  --main-text: #FFFFFF;
+  --sub-text: #8F8F8F;
+  --spotify-green: #42D760;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
