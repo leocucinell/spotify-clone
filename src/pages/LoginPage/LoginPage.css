@@ -1,0 +1,15 @@
+.LoginPage-container{
+    height: 100vh;
+    width: 100vw;
+}
+
+.LoginPage-logo-container{
+    border-bottom: 1px solid lightgray;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LoginPage-logo-span{
+    margin-left: -15px;
+}

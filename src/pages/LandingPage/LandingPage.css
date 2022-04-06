@@ -35,6 +35,9 @@
     font-weight: bolder;
     cursor: pointer;
 }
+.LandingPage-navbar ul li:hover{
+    filter: brightness(80%);
+}
 
 /* SECTION: Main content */
 .LandingPage-main{
