@@ -1,0 +1,46 @@
+.SideMenu-container{
+    height: 100vh;
+    /* Resize on dragging later */
+    max-width: 300px;
+    min-width: 100px;
+    background-color: black;
+    color: white;
+}
+
+.SideMenu-logo-container{
+    font-size: 200%;
+    margin-left: 10%;
+    padding-top: 20px;
+}
+.SideMenu-logo-container #SideMenu-logo-icon{
+    margin-right: 10px;
+}
+
+
+.SideMenu-options-container{
+    margin-left: -3%;
+    margin-top: 40px;
+}
+.SideMenu-options-ul{
+    list-style: none;
+}
+#SideMenu-options-halfway{
+    margin-top: 40px;
+}
+.SideMenu-options-ul li{
+    margin-top: 20px;
+    color: lightgray;
+    transition: all ease 200ms;
+    cursor: pointer;
+}
+.SideMenu-options-ul li:hover{
+    color: white;
+}
+.SideMenu-option-icon{
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+.SideMenu-options-ul li span{
+    font-size: 0.95rem;
+    font-weight: bolder;
+}

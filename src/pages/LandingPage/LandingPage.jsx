@@ -4,11 +4,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCompactDisc } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram, faTwitter, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { addUser } from "../../features/userSlice";
 
 
 const LandingPage = () => {
 
     const navigate = useNavigate();
+    const dispatch = useDispatch();
 
     const handleSpotifyLogin = () => {
         const SPOTIFY_AUTHORIZE_ENDPOINT = "https://accounts.spotify.com/authorize"
@@ -34,6 +37,8 @@ const LandingPage = () => {
         if(window.location.hash){
             const {access_token, token_type, expires_in} = retrieveReturnParamsFromSpotifyAuth(window.location.hash);
             localStorage.setItem("spotify-front-end-access_token", access_token);
+            //Add user token to redux
+            dispatch(addUser(access_token));
             navigate("Home");
         }
     })
