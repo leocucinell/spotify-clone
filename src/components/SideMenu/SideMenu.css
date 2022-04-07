@@ -5,6 +5,7 @@
     min-width: 100px;
     background-color: black;
     color: white;
+    position: relative;
 }
 
 .SideMenu-logo-container{
@@ -44,3 +45,29 @@
     font-size: 0.95rem;
     font-weight: bolder;
 }
+
+
+.SideMenu-playing-display{
+    position: absolute;
+    width: 100%;
+    /* Change height during drag resizing */
+    height: 300px;
+    bottom: 0;
+    left: 0;
+}
+
+/* SECTION: image styling and animation */
+.SideMenu-image-loading{
+    width: 100%;
+    height: 300px;
+}
+
+.SideMenu-image-enter{
+    /* change this value on size */
+    transform: translateY(300px);
+}
+.SideMenu-image-enter-active{
+    transform: translateY(0);
+    transition: all 300ms ease-out;
+}
+/* SECTION: ~~~~~~~~~~~~~~~~~~~~~~~~  */

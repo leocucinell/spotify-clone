@@ -15,20 +15,21 @@ const HomePage = () => {
         if(!userToken){
             navigate('/');
         }
+
+        //NOTE: Example spotify api interaction
+        // spotify.get("me/tracks", {
+        //     headers: {
+        //         'Authorization': 'Bearer ' + userToken
+        //     }
+        // }).then((res) => {
+        //     console.log(res);
+        // });
         
-        spotify.get("me/tracks", {
-            headers: {
-                'Authorization': 'Bearer ' + userToken
-            }
-        }).then((res) => {
-            console.log(res);
-        });
-        
-    }, [])
+    }, [navigate, userToken]);
 
     return(
         <div className="HomePage-container">
-            <SideMenu />
+            <SideMenu userToken={userToken} />
         </div>
     );
 }
