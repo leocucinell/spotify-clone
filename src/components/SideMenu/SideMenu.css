@@ -1,5 +1,5 @@
 .SideMenu-container{
-    height: 100vh;
+    height: calc(100vh - 80px);
     /* Resize on dragging later */
     max-width: 300px;
     min-width: 100px;
@@ -52,7 +52,7 @@
     width: 100%;
     /* Change height during drag resizing */
     height: 300px;
-    bottom: 0;
+    bottom: 0px;
     left: 0;
 }
 
@@ -67,7 +67,7 @@
     transform: translateY(300px);
 }
 .SideMenu-image-enter-active{
-    transform: translateY(0);
+    transform: translateY(0px);
     transition: all 300ms ease-out;
 }
 /* SECTION: ~~~~~~~~~~~~~~~~~~~~~~~~  */
