@@ -7,11 +7,11 @@ import SideMenu from "../../components/SideMenu/SideMenu";
 
 const HomePage = () => {
 
-    const currentUser = useUser();
+    const userToken = useUser();
 
     useEffect(() => {
         // const userToken = localStorage.getItem("spotify-front-end-access_token");
-        console.log('useUser: ', currentUser);
+        console.log('useUser: ', userToken);
         // spotify.get("me/tracks", {
         //     headers: {
         //         'Authorization': 'Bearer ' + userToken
