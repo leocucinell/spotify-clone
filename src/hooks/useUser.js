@@ -1,11 +1,10 @@
 import { useSelector, useDispatch } from "react-redux";
 import { addUser } from "../features/userSlice";
-import { useNavigate } from "react-router-dom";
+
 
 const useUser = () => {
 
     const dispatch = useDispatch();
-    const navigate = useNavigate();
 
     const currentUser = useSelector((state) => state.user.value);
 
@@ -17,7 +16,7 @@ const useUser = () => {
             return savedUser;
         } else {
             //Neither saved or state has a user
-            navigate('/')
+            return false;
         }
     }
     return currentUser;
